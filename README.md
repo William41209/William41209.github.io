@@ -1,4 +1,4 @@
-# 您好 歡迎您
+# Python Practice
 
 ### XY_generator
 * Item1
