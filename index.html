@@ -1,7 +1,909 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William's blog 首頁</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="icon" href="./assets/images/snow-outline.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    .text{
+      font-weight: 800;
+      font-size: 25pt;
+      font-family: 'Segoe Print';
+    }
+    .text-light{
+      color: black;
+    }
+    .text-dark{
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#" class="text">
+          <p class="logo-light text-light">My Blog</p>
+          <p class="logo-dark text-dark">My Blog</p>
+          <!-- <img src="./assets/images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
+          <img src="./assets/images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark"> -->
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="#" class="nav-link">首頁</a>
+            </li>
+
+            <li>
+              <a href="aboutme.html" class="nav-link">關於我</a>
+            </li>
+            <!--
+            <li>
+              <a href="#" class="nav-link">聯絡我</a>
+            </li>
+            -->
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">主選單</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">首頁</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="aboutme.html" class="nav-link">關於我</a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a href="#" class="nav-link">聯絡我</a>
+              </li>
+              -->
+            </ul>
+
+          </div>
+
+          <!-- <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div> -->
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            您好，我是 <b>劉俊緯</b>
+            <br>是位統計學家。
+          </h1>
+          <p class="h3">
+            Specialized in <b>Data analysis</b> & <b>Data science</b>
+          </p>
+          <div class="btn-group">
+            <a href="#my-Presentation" class="btn btn-primary">我的作品</a>
+            <a href="aboutme.html" class="btn btn-secondary">關於我</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="./assets/images/大頭照(1p5inchs_small).png" alt="Julia Walker" class="hero-img">
+            <!-- <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div> -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <h2 class="h2" id="my-Presentation">作品 (Work)</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/VLG_ex.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                  width="200" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny inline-button">R</button><button class="blog-topic text-tiny inline-button">Python</button>
+                <h3>
+                  <a href="#" class="h3">
+                    碩士研究：時間序列的非週期性預測
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  <p class="blog-text">◇ 以 股價資料集 使用 兩步驟 的概念，提供使用者更多的預測資訊。</p>
+                  <p class="blog-text">◇ 將 線性迴歸模型 與 動態調整方法 結合，使此 兩步驟方法 增加為 3種預測結果。</p>
+                  <p class="blog-text">◇ 優化原方法的侷限性、修正特定情況會誤判，使模型 降低判錯率。</p>
+                  <p class="blog-text">◇ 利用 殘差分析 與 F 檢定 進行判定且合併 拔靴法 ，解決預測僅能是固定週期的限制。</p>
+                  <p class="blog-text">◇ 確認 道瓊指數股價對於台股股價 無預測關係。</p>
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/大頭照60px(1p5inchs_small).png" alt="Julia Walker" height="56">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">劉俊緯</a>
+
+                    <p class="text-sm">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="2021-11-28">2022 , Feb. ~</time>
+                      <time datetime="2021-11-28">2023 , Jul.</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/QC_ex.png" alt="Fast web page loading on a $20 feature phone" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny inline-button">R</button><button class="blog-topic text-tiny inline-button">Python</button>
+                <h3><a href="" class="h3">北捷人潮壅擠管制</a></h3>
+
+                <p class="blog-text">
+                  <p class="blog-text">◇ 監測人潮的多寡以 防止過度壅塞 的緊急情況發生。</p>
+                  <p class="blog-text">◇ 評估一年中各月份的 人潮尖峰期與離峰期。</p>
+                  <p class="blog-text">◇ 使用各類管制圖進行 數據解剖、分析、預測。</p>
+                  <p class="blog-text">◇ 常擁擠時段為 連假與跨年，加派人力疏散 避免踩踏事件 的產生。</p>
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/大頭照60px(1p5inchs_small).png" alt="Julia walker" height="56">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">劉俊緯</a>
+
+                    <p class="text-sm">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="2021-11-28">2023 , Sep. ~</time>
+                      <time datetime="2021-11-28">2023 , Dec.</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/GPX_ex.png" alt="GPS data analysis" width="200"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Python</button>
+
+                <h3><a href="https://github.com/William41209/GPSdata_Analysis" class="h3">GPS 資料分析</a></h3>
+                <p class="blog-text">
+                  <p class="blog-text">◇ 處理 GPS 定位漂移的問題、最佳化路徑的走向。</p>
+                  <p class="blog-text">◇ 評估路徑上 noise 的定位點，進行資料篩選與清理。</p>
+                  <p class="blog-text">◇ 使用 區域性迴歸模型 (LOESS) 平滑化 GPS 路徑。</p>
+                  <p class="blog-text">◇ 藍點：原始資料點 ； 紅點：平滑化後資料點。</p>
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/大頭照60px(1p5inchs_small).png" alt="Julia walker" height="56">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">劉俊緯</a>
+
+                    <p class="text-sm">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="2021-11-28">2022 , Sep. ~</time>
+                      <time datetime="2021-11-28">2023 , Feb</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!--
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-4.png" alt="Dynamically Securing Databases using Hashicorp Vault"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Database</button>
+
+                <h3><a href="" class="h3">Dynamically Securing Databases using Hashicorp Vault</a></h3>
+
+                <p class="blog-text">
+                  Nowadays, it's hard to profoundly talk about security in the IT industry, since it has to be
+                  considered on so many
+                  different levels: from securing code chunks, securing containers, up to securing complex
+                  infrastructures and defining
+                  strong authorization and authentication policies across the enterprise.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-20">Nov 20, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-5.png"
+                  alt="Adaptive Loading - Improving Web Performance on low-end devices" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Web Performance</button>
+
+                <h3><a href="" class="h3">Adaptive Loading - Improving Web Performance on low-end devices</a></h3>
+
+                <p class="blog-text">
+                  Adaptive Loading: Do not just respond based on screen size, adapt based on actual device hardware.
+                  Any user can have a slow experience. In a world with widely varying device capabilities, a "one-size"
+                  fits all
+                  experience may not always work. Sites that delight users on high-end devices can be unusable on
+                  low-end ones,
+                  particularly on median mobile and desktop hardware and in emerging markets.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-10">Nov 10, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-6.png"
+                  alt="Don't Develop Just for Yourself - A Developer's Checklist to Accessibility" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Accessibility</button>
+
+                <h3><a href="" class="h3">Don't Develop Just for Yourself - A Developer's Checklist to Accessibility</a>
+                </h3>
+
+                <p class="blog-text">
+                  We, as developers, tend to develop sites unconsciously for people like ourselves. If we don't actively
+                  pay attention,
+                  the sites are often accessible only for certain types of people: Sighted mouse-users, who have good
+                  fine motor skills
+                  and are good at using computers.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-25">Oct 25, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-7.png"
+                  alt="Building a Restful CRUD API with Node JS, Express, and MongoDB" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Database</button>
+
+                <h3><a href="" class="h3">Building a Restful CRUD API with Node JS, Express, and MongoDB</a></h3>
+
+                <p class="blog-text">
+                  Application Programming Interface is the abbreviation for API. An API is a software interface that
+                  enables two apps to
+                  communicate with one another. In other words, an API is a messenger that sends your request to the
+                  provider and then
+                  returns the response to you.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-15">Oct 15, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">5 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-8.png" alt="Monitoring Performance with the PageSpeed Insights API"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Web Performance</button>
+
+                <h3><a href="" class="h3">Monitoring Performance with the PageSpeed Insights API</a></h3>
+
+                <p class="blog-text">
+                  The PageSpeed Insights API provides free access to performance monitoring for web pages and returns
+                  data with
+                  suggestions for how to improve. The V5 API includes lab data from Lighthouse and real-world data from
+                  the Chrome User
+                  Experience Report (CrUX).
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-03">Oct 3, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">5 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-9.png" alt="The best web accessibility tools for developers in 2021"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Accessibility</button>
+
+                <h3><a href="" class="h3">The best web accessibility tools for developers in 2021</a>
+                </h3>
+
+                <p class="blog-text">
+                  The quality of the tools you use defines the speed with which you can diagnose and resolve problems.
+                  Each year the landscape changes dramatically in web technologies, and of late the tooling for
+                  accessibility is no
+                  exception.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-09-13">Sep 13, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-10.png"
+                  alt="How to connect a React frontend with a NodeJS/Express backend" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Database</button>
+
+                <h3><a href="" class="h3">How to connect a React frontend with a NodeJS/Express backend</a></h3>
+
+                <p class="blog-text">
+                  The MERN (MongoDB, Express, React, NodeJS) stack is very popular for making full stack applications,
+                  utilizing
+                  Javascript for both the backend and frontend as well as a document-oriented or non relational database
+                  (MongoDB),
+                  meaning that it's structured like JSON rather than a large excel sheet like SQL databases are.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Julia Walker</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-09-21">Sep 21, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <button class="btn load-more">Load More</button>
+
+        </div>
+        -->
+
+
+
+
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside">
+          <!--
+          <div class="topics">
+
+            <h2 class="h2">Topics</h2>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+
+              <p>R</p>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </div>
+
+              <p>Accessibility</p>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+
+              <p>Web Performance</p>
+            </a>
+
+          </div>
+          -->
+          <!--
+          <div class="tags">
+
+            <h2 class="h2">Tags</h2>
+
+            <div class="wrapper">
+
+              <button class="hashtag">#mongodb</button>
+              <button class="hashtag">#nodejs</button>
+              <button class="hashtag">#a11y</button>
+              <button class="hashtag">#mobility</button>
+              <button class="hashtag">#inclusion</button>
+              <button class="hashtag">#webperf</button>
+              <button class="hashtag">#optimize</button>
+              <button class="hashtag">#performance</button>
+
+            </div>
+
+          </div>
+          -->
+          <!--
+          <div class="contact">
+
+            <h2 class="h2">聯絡方式</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Do you want to learn more about how I can help your company overcome problems? Let us have a
+                conversation.
+              </p>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+          -->
+          <!--
+          <div class="newsletter">
+
+            <h2 class="h2">Newsletter</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Subscribe to our newsletter to be among the first to keep up with the latest updates.
+              </p>
+
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+
+            </div>
+          -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <!-- <a href="#" class="footer-logo"> -->
+        <a href="#" class="text">
+          <button class="logo-light text-light blog-topic">↑</button>
+          <button class="logo-dark text-dark blog-topic">↑</button>
+          <!-- <img src="./assets/images/logo-light.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-light">
+          <img src="./assets/images/logo-dark.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-dark"> -->
+        </a>
+        <!--
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database management.
+        </p>
+        -->
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">超連結</p>
+
+        <ul>
+          
+          <li>
+            <a href="aboutme.html" class="footer-link">關於我</a>
+          </li>
+
+          <li>
+            <a class="footer-link-other">聯絡方式</a>
+          </li>
+
+        </ul>
+        <ul class="social-link">
+          <li>
+            <a href="https://github.com/William41209" class="icon-box github">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <a href="https://github.com/William41209" class="footer-title">https://github.com/William41209</a>
+        </ul>
+
+        <ul class="social-link">
+          <li>
+            <a class="icon-box github">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+          <p class="footer-title">William28205197@gmail.com</p>
+        </ul>
+      </div>
+      <!--
+      <div class="wrapper">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+      -->
+    </div>
+
+    <p class="copyright">
+      &copy; MY BLOG <a href="#">William Liu</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.min.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
